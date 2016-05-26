@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="8dip"
+    android:paddingTop="8dip"
+    android:background="#80bfff">
+
+    <ImageView
+        android:id="@+id/bbm_user_img"
+        android:layout_width="65dip"
+        android:layout_height="65dip"
+        android:contentDescription="@string/app_name"
+        android:paddingBottom="5dip"
+        android:paddingRight="9dip"
+        android:paddingLeft="4dp"
+        android:paddingTop="4dip"
+        android:src="@drawable/stub"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/bbm_user_img"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bbmuser_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bbm_user_img"
+        android:layout_toRightOf="@+id/bbm_user_img"
+        android:text="No Record Found"
+        android:textSize="17dip"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/bbm_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/bbmuser_name"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:text="Empty"
+        android:textSize="19dip"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textColor="#ffffff"/>
+
+      <!-- 
+          <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bbmuser_name"
+        android:layout_alignParentRight="true"
+        android:text="Gender"
+        android:textStyle="bold" />
+      
+       -->
+
+    <ImageView
+        android:id="@+id/gender_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bbmuser_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/male_16"/>
+
+</RelativeLayout>
